@@ -1,0 +1,181 @@
+# ChatGPT-5 DeepResearch Prompt  
+**Mission:** Create the world’s most structured, detailed, comprehensive, and actionable report for choosing the best EU country to incorporate a new **longevity-focused** company for **two German founders** who will **continue living in Germany** and will **primarily reinvest profits** in the first 24 months.
+
+---
+
+## 0) Operating Mode & Guardrails (Read First)
+- **Use Browsing Throughout:** Verify every claim with **current** sources. Prefer **official/primary** sources; add high-quality professional analyses; include practitioner reviews with credibility grading.   - **Recency & Dates:** Show **effective dates** for tax/regulatory rules and **access dates** for all sources.   - **Source Grading:** Mark each citation **A (official/primary), B (top-tier firm/think-tank), C (practitioner/forum/review)**.   - **Variance Handling:** If sources conflict, show a **variance table** and choose the **conservative** figure.   - **Reasoning Disclosure:** Keep step-by-step reasoning internal; present **concise rationales, calculations, and tables** only.   - **Normalization:** All costs in **EUR**; clearly separate **one-off** vs **recurring**.   - **Bilingual Output:** Executive Summary & Country Shortlists in **English + German**; glossary EN↔DE.   - **Comparability:** Use standardized tables and templates provided below.   - **Germany Overlay Required:** Address **POEM/“Ort der Geschäftsleitung”**, **German CFC (Hinzurechnungsbesteuerung)**, **Permanent Establishment** risks.
+
+---
+
+## 1) User Priorities & Constraints (Lock These In)
+- **Horizon:** First **24 months**; customers primarily in the **EU**.   - **Founders:** Both **German residents**; company management likely from Germany.   - **Local Director:** **Prefer not**, but **acceptable** if materially beneficial.   - **Presence:** Assume **no relocation**; compare **No-Substance** vs **Light-Substance** options.   - **Profit Policy:** **Reinvest** (low dividends).   - **Data Hosting:** **EU-only preferred**, but evaluate alternatives.   - **AI Usage:** **Very likely**; assess **EU AI Act** implications.   - **Risk Posture:** Balanced — provide **upsides and downsides**, including **negative reports** and red flags.   - **Languages:** English & German.
+
+**Top Criteria (equal weights):**   1) **Least bureaucracy** (25%)   2) **Lowest taxes** (25%)   3) **Least regulation** (25%)   4) **Cross-border operability** (25%)
+
+---
+
+## 2) Business Scenarios (Assess All)
+1) **SaaS/AI coaching** (no medical claims)   2) **SaMD risk** (software potentially under MDR)   3) **Supplements / nutraceuticals / novel foods** (EFSA claims)   4) **Diagnostics / labs / biomarkers** (IVDR)   5) **Medical devices / wearables** (MDR)   6) **Biotech / R&D** (grants, trials)   7) **Media / community / events & e-commerce** (OSS/IOSS VAT)
+
+For each scenario, show **feasibility, cost, timeline, and regulatory friction by jurisdiction**.
+
+---
+
+## 3) Countries (Cover All 27, Exclude None)
+Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden.
+
+**Special Focus Deep-Dives:** Estonia (OÜ), Bulgaria (OOD/EOOD), Malta (Ltd), Cyprus (Ltd), Ireland (Ltd), Netherlands (BV) — plus any others that outperform on the four criteria.
+
+---
+
+## 4) Methodology & MCDA Framework
+
+### 4.1 Sub-Criteria & Anchors (Score 1–5; justify anchors)
+**A) Bureaucracy**
+- Incorporation time; e-government maturity (eID/eIDAS, digital signatures); notary needs   - Audit thresholds; accounting/reporting cadence; VAT/OSS ease; **setup/annual cost & frequency**
+
+**B) Taxes**
+- Statutory CIT; **effective** rate given reliefs/participation exemptions   - Treatment of **retained earnings** (e.g., Estonia distribution tax model)   - **WHT** on dividends/interest/royalties; **treaty network with Germany**   - **German CFC** interactions; payroll/social charges (Light-Substance)
+
+**C) Regulation**
+- MDR/IVDR fit for SaMD/devices/diagnostics   - Supplements/novel foods & **health claims enforcement culture**   - Telemedicine permissibility; healthcare advertising   - **GDPR** special-category data; **EU AI Act** applicability/timelines
+
+**D) Cross-Border Operability**
+- OSS/IOSS VAT readiness; passporting/recognition options   - Banking access for cross-border ops; English prevalence; contract enforceability   - Payment rails & EMI/bank availability
+
+### 4.2 Scoring & Weights
+- **Weights fixed:** 25% each (Bureaucracy, Taxes, Regulation, Cross-border).   - Convert to **0–100** normalized total. Provide **sensitivity ±10%** per weight.
+
+### 4.3 Tie-Breakers (show separately; no weight)
+Banking/KYC friction; director residency mandate; minimum substance expectations; reputation with investors; grants (EU/national); IP/patent box; talent availability; DESI digital public services ranking.
+
+---
+
+## 5) Germany-Specific Overlays (Must Include)
+- **POEM / Ort der Geschäftsleitung:** Risk of German tax residency if effective management is in Germany; mitigations (board practices, decision logs, occasional local director).   - **German CFC:** Triggers for low-tax passive income; how **reinvested operating income** is treated; thresholds/exemptions.   - **Permanent Establishment (DE):** Triggers for PE given remote ops; VAT registration vs OSS; **contracting party** and factual nexus analysis.
+
+---
+
+## 6) Two Operating Modes (Analyze Both)
+1) **Remote / No-Substance:** Digital-first, no local staff/office/director unless unavoidable.   2) **Light-Substance:** Minimal compliant office, optional local non-exec director, 1–3 hires.   → Quantify **benefit vs cost** (banking success, reputation, POEM/CFC risk reduction).
+
+---
+
+## 7) Required Deliverables
+
+### 7.1 Bilingual Executive Summary (EN/DE)
+- Top 3 jurisdictions **overall** and **by scenario** with scores & 3-line rationale.   - “If you optimize for **X**, pick **Y**” snippets.   - **German translation** of Summary & Shortlists.
+
+### 7.2 Standardized Country Scorecards (27× one-pagers)
+Include: company forms & min capital; founder residency rules; **director/local agent** requirements; incorporation **steps**, **time**, **cost** (gov + typical professional fees); **tax profile** (CIT, base, participation exemption, loss rules, **WHT**, VAT & **OSS/IOSS**, **R&D/patent box**); **compliance burden** (accounting standard, audit thresholds, filing schedule, payroll/social charges for 1–3 hires); **sector overlays** (MDR/IVDR, supplements, telemedicine, AI Act); **banking/payments** (banks/EMIs, KYC pain points); **digital gov** (e-ID, portals, English); **addresses & contacts** (registries, tax, social security, BO register); **vetted providers** (2–4 law/accounting, budget/mid/premium; 1–2 bank/EMI intros; registered office/coworking options with price bands); **reviews & practitioner insights** (pros/cons with source grades); **red flags & gotchas**.
+
+**Scorecard Template (fill per country):**
+- **Legal Forms & Min Capital:**   - **Founder/Director Requirements:**   - **Incorporation Steps, Time, Cost (EUR):**   - **Tax Profile (CIT, Effective Rate, WHT, VAT/OSS, Incentives):**   - **Compliance Burden (Accounting/Audit/Filings):**   - **Sector Overlays (MDR/IVDR/EFSA/Telemed/AI Act):**   - **Banking & Payments (banks/EMIs, friction points):**   - **Digital Gov (e-ID/portals/English):**   - **Addresses & Contacts (full address/phone/email/portal):**   - **Vetted Providers (budget/mid/premium + ranges):**   - **Reviews (positives/negatives, graded):**   - **Red Flags & Gotchas:**   - **Sources (A/B/C, with dates):**
+
+### 7.3 Ranked Shortlists
+- **By Scenario:** SaaS, SaMD, Supplements, Diagnostics, Biotech, Media/e-com.   - **By Mode:** No-Substance vs Light-Substance.   - **By Founder Goal:** Fast setup, lowest ongoing cost, best banking, best grants/IP.
+
+### 7.4 MCDA Workbook (CSV/Excel-ready)
+Provide raw data, sub-scores, weights, totals, and sensitivity results.
+
+**CSV Schema (example):**
+```csv
+country,bureaucracy_score,taxes_score,regulation_score,crossborder_score,weight_b,weight_t,weight_r,weight_c,weighted_total,rank,notes
+Estonia,5,3,4,5,0.25,0.25,0.25,0.25,85,1,"Anchors & sources…"
+7.5 TCO Cost Model (3-Year)
+    • One-off incorporation + first-year professional fees; annual accounting/audit; registered office; director retainer; payroll & employer social (0/1/3 hires); travel/translation.
+CSV Schema (example):
+jurisdiction,mode,category,year,cost_type,amount_eur,assumptions
+Estonia,No-Substance,Incorporation,0,one-off,650,"Gov + e-notary"
+Estonia,No-Substance,Accounting,1,recurring,1200,"Annual filings"
+7.6 Setup Playbooks & Checklists
+    • Gantt from decision → incorporation → banked → VAT/OSS → first invoice.
+    • Document packs (KYC, apostilles, POA, translations).
+    • Banking playbook (banks/EMIs, required docs, sequencing to speed approvals).
+    • Compliance calendar (statutory filings, VAT, payroll, BO register, substance review).
+7.7 Risk Register
+    • Germany overlays (POEM, CFC, PE) plus Top 5 risks per country with mitigations & monitoring tasks.
+7.8 Appendices
+    • Source list with grading (A/B/C); glossary EN↔DE; MCDA data dictionary; assumptions; change log.
+
+8) Research & Evidence Instructions (Strongly Enforced)
+    • Must Use: EU Commission, EU law/regulation portals, national business registries, tax authorities, MDR/IVDR & EU AI Act texts/guidance, VAT/OSS docs.
+    • Should Use: Big-4 and reputable law/accounting firms; central bank/financial supervisor lists of licensed banks/EMIs.
+    • May Use (clearly marked C-grade): Founder forums (e.g., Reddit/Indie Hackers), Trustpilot/Google reviews, LinkedIn posts by professionals.
+    • Citations: Inline after key facts; list in appendix with grading plus effective dates.
+
+9) Decision & Recommendation (Explicit)
+    • Top 3 overall with scores, rationale, and what tips the balance.
+    • Per-scenario winner(s) with caveats.
+    • No-Substance vs Light-Substance recommended path per top country with cost/risk delta.
+    • Deal-breakers: When to avoid a jurisdiction (and why).
+
+10) Negative Findings & Watchlist
+    • Surface negative practitioner reports, enforcement trends, banking rejection patterns, notary/registry backlogs, regulatory grey zones.
+    • Roadmap of upcoming changes (e.g., e-invoicing mandates, AI Act phases, MDR/IVDR grace periods) with dates and impact.
+
+11) Templates to Render (Fill Completely)
+11.1 Country Scorecard (Markdown)
+## {Country} — Company Formation for Longevity Venture
+
+**Summary (3 bullets):**   - …   - …   - …
+
+### 1) Incorporation
+- Forms & min capital: …   - Founder/Director requirements: …   - Steps & timeline: …   - Costs (gov + typical professional): …
+
+### 2) Tax Profile
+- CIT (statutory/effective): …   - Dividends/WHT: …   - VAT/OSS: …   - Incentives (R&D/patent box): …
+
+### 3) Compliance Burden
+- Accounting standard & audit thresholds: …   - Filing cadence & ongoing costs: …   - Payroll/social (1–3 hires): …
+
+### 4) Sector Overlays
+- MDR/IVDR: …   - Supplements/EFSA health claims: …   - Telemedicine & advertising: …   - AI Act posture: …
+
+### 5) Banking & Payments
+- Banks/EMIs & KYC friction: …
+
+### 6) Digital Government
+- e-ID/portals/English: …
+
+### 7) Contacts & Providers
+- Registries/Tax/Social/BO — addresses/phones/emails/portals   - Vetted providers (budget/mid/premium) with price bands
+
+### 8) Reviews & Red Flags
+- Positives/Negatives (graded C where applicable)   - Red flags/gotchas
+
+**MCDA Sub-Scores:** B: _, T: _, R: _, C: _ → **Total:** _/100   **Sources (A/B/C with dates):** …
+11.2 Executive Summary (Bilingual Snippet)
+# Executive Summary (EN)
+- Overall Top 3: 1) … (Score …), 2) …, 3) …
+- Scenario Winners: SaaS — … ; SaMD — … ; Supplements — … ; …
+- Recommendation (No-Substance vs Light-Substance): …
+
+# Zusammenfassung (DE)
+- Gesamt Top 3: 1) … (Score …), 2) …, 3) …
+- Szenario-Sieger: SaaS — … ; SaMD — … ; Supplements — … ; …
+- Empfehlung (Ohne Substanz vs. Leichte Substanz): …
+11.3 14-Day Execution Plans (Top Jurisdiction)
+## Plan A: Remote / No-Substance (14 Tage)
+Day 1–2: Decide form; docs checklist; KYC kickoff — Owner   Day 3–5: Incorporation filing (e-signature) — Counsel   Day 6–8: Bank/EMI applications (sequenced) — CFO   Day 9–10: VAT/OSS registration — Accountant   Day 11–12: Accounting stack & payroll setup — Ops   Day 13–14: First invoice test, compliance calendar — Ops
+
+## Plan B: Light-Substance (14 Tage)
+Add: registered office lease, local non-exec director onboarding, minimal hire (JD, contract), local payroll/social registrations. Show added costs & mitigations for POEM/CFC.
+
+12) Output Packaging
+    • Clickable ToC, numbered headings.
+    • All tables complete; MCDA & TCO include downloadable CSV code blocks.
+    • Appendices include source list with grading, glossary EN↔DE, assumptions, and change log.
+    • End with a Next Steps checklist tailored to the top pick.
+
+13) Quality Bar (Fail if Missing)
+    • Full coverage of 27 countries with completed scorecards, contacts, and ≥3 sources each (≥1 A-grade).
+    • MCDA and TCO are replicable (formulas shown).
+    • Germany overlays explicitly addressed with mitigations.
+    • Bilingual summary delivered.
+    • Provider shortlist (budget/mid/premium) present.
+    • Assumptions & limitations disclosed.
+
+14) Special Note on Prior User Research
+Cross-check and expand on user’s preliminary models (e.g., Estonia OÜ, Bulgaria OOD/EOOD, Ireland Ltd, Netherlands BV, Malta Ltd, Cyprus Ltd) — validate capital rules, tax treatments (e.g., Estonia distribution model), director/substance norms, and typical banking friction. Where practitioner experience diverges from official policy, flag the gap and recommend the lowest-risk compliant path.
