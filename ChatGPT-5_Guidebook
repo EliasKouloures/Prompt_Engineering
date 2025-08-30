@@ -1,0 +1,130 @@
+# ROLE & MODE
+You are **ChatGPT-5** running with **DeepResearch**: rigorous web research, source triangulation, and on-the-fly fact-checking. Use official OpenAI sources first; then cross-verify with two or more reputable outlets. **Do not reveal chain-of-thought**; provide only conclusions, steps, and justifications with citations. Operate as a **senior documentation team** (UX writer + tech editor + safety reviewer + educator).
+
+# CONTEXT LOCKS (do not change)
+- **Date/Timezone:** 13 Aug 2025 — Europe/Berlin.
+- **Jurisdiction:** Germany (EU). Reflect EU/Germany rules (GDPR, youth consent), and note when features differ by region or are unavailable in the EU.
+- **Currency:** **EUR (€)**. Show prices as **€ gross** and, if relevant, **net + VAT note**. If pricing varies, show **Germany** example.
+- **Audience:** One consolidated output that contains **four complete guidebooks** (A→D) for:
+  - **A)** AI Experts
+  - **B)** Parents (non-technical)
+  - **C)** Teens (~14)
+  - **D)** Kids (~8)
+- **Style baseline:** Hemingway — short sentences, active voice, no fluff. High signal-to-noise for Expert. Parents/Teens/Kids: keep it warm, clear, and engaging with metaphors and examples.
+
+# MISSION
+Create **the clearest, most structured, deeply detailed How-To guidebook for ChatGPT-5** covering **all current features** and **flagging experimental/in-development or region-limited items**. Build it to remain useful over time with **forward-looking notes** and an **update checklist**.
+
+# SCOPE (verify labels; no fabrication)
+Cover, with exact current names as of today:
+- Account creation (free), sign-in (email/SSO), **2FA**, age requirements/parental consent (Germany/EU), data controls.
+- **Free vs. paid tiers** (all available in Germany/EU): feature access, rate limits, model options, enterprise/education plans.
+- **All Settings** (data/training, history, temporary chat, model selection, voice/dictation, accessibility, language, privacy).
+- **UI tour**: every visible element of ChatGPT-5.
+- **Plus/attachment menu** to the left of prompt: e.g., **Add photo/files**, **Import from Google Drive**, **Agent Mode**, **DeepResearch**, **Create Image**, **Study & Learn**, **Web Search**, **Canvas**, **Connect OneDrive**, **Connect SharePoint**, etc. If labels differ, use the **actual label** found today and explain.
+- **Sidebar**: New chat, Search chat, Library, GPTs/Agents, Sora (if present), Codex (if present), Chat history, and anything new. If an item is missing or renamed, state so.
+- **Temporary Chat**: what it does; data/training impact.
+- **Dictate & Voice Mode**: setup, languages, mic tips, quiet-environment tricks.
+- **Safety, privacy, and responsible use** for each audience.
+- **Workshop utilities**: starter prompts, projects, printable checklists.
+- **Known gaps / region limits**: clearly label **[EU availability]**, **[Beta]**, **[Experimental]**.
+
+# RESEARCH PROTOCOL (DeepResearch)
+1. **Primary sources first:** OpenAI Help Center, product pages, blog/announcements, Terms, Privacy, dev docs, API docs.
+2. **Cross-verify** with 2–3 reputable secondary sources (major tech press, standards bodies, education/government resources relevant to Germany/EU).
+3. **Note discrepancies**. Prefer official language when conflict exists.
+4. **Citations:** Inline footnotes like **[1]** linking the exact page title. Cite **every non-obvious claim** (pricing, feature availability, limits, settings behavior).
+5. **No placeholders.** If unknown, write: “**This is changing. See sources.**” + citations.
+
+# FORMAT & PACKAGING (single message; print-ready)
+- Output **all four full guidebooks A→D** in **one** message.
+- Use **Markdown** with clear headings, tables, and checklists. Add callout blocks and small ASCII diagrams where helpful.
+- Include at top of each guide: **Cover block** (title, subtitle, audience, date, version).
+- **Print note** (A4, margins 1.8 cm, 1.15 line spacing, 12–14 pt body).
+- At the very end: global **Changelog**, **Assumptions**, and a **One-Page Cheat Sheet** for each audience.
+- **Accessibility:** target reading levels — A: Grade 13+; B: Grade 8–9; C: Grade 6–7; D: Grade 3–4. Add alt-text for any diagram.
+
+# STYLE ENFORCERS
+- Short sentences. Verbs first. Concrete steps.
+- Use **tables** for plan comparisons and feature matrices. Use **checklists** for step sequences. Bold UI labels **exactly** as they appear today.
+- **Expert (A):** ruthless brevity, first-principles framing, constraints & limits, measurable advice. No filler.
+- **Parents (B) + Teens (C) + Kids (D):** friendly tone, helpful metaphors, examples, and safety sidebars.
+
+# DELIVERABLES (produce all now)
+**Start with 1 and 2 briefly, then deliver 3 and 4 in full.**
+
+1) **Feature Inventory Matrix (verified)**  
+   A table with columns: **Feature / Exact Current Label / What it does / Where to find it / Tier (Free/Paid) / Status (GA/Beta/Experimental) / EU-DE availability (Yes/No/Partial) / Notes / Sources**.
+
+2) **Outlines for A→D (bullet form)**  
+   One screen each. Confirm section headings and unique artifacts per audience.
+
+3) **Four complete guidebooks (A→D)**  
+   **Common structure for each:**
+   - **Cover block**: Title, subtitle, audience, date, version (“Compiled on 13 Aug 2025. Sources verified.”).
+   - **At-a-Glance (10 bullets)**: Quickstart.
+   - **Step-by-Step Setup** (Germany/EU): account, age/consent notes, verification, **2FA**, first login, data settings.
+   - **Plans & Pricing (EUR)**: comparison **table** (free vs paid tiers; enterprise/edu if applicable). Include VAT note and region availability.
+   - **UI Walkthrough**: labeled callouts for every control visible today. Add a tiny ASCII map if screenshots aren’t allowed.
+   - **Core Features** (each with mini-spec):
+     - What it’s for.  
+     - When to use it vs alternatives.  
+     - Limits/quotas.  
+     - **3–5 example prompts** tailored to the audience.  
+     - **Pitfalls & QA** (how to check outputs).  
+     - **Safety & privacy reminders.**
+   - **Power Moves** (audience-tuned): prompt patterns, templates, and saved-prompt snippets.
+   - **Safety, Privacy, Ethics**: do/don’t lists; reporting; data retention; bias; hallucinations; academic integrity.
+   - **Troubleshooting & FAQs**: top 15 issues + fixes; include offline/region issues, login, billing, connectors, voice mic, upload limits.
+   - **Glossary** (audience-tuned).
+   - **Resources & Links** (official docs first, then secondary).
+   - **Forward-Looking Notes**: what may change; how to adapt.
+   - **Changelog & Assumptions.**
+   - **One-Page Cheat Sheet** (immediately printable).
+
+   **Audience-specific add-ons:**
+   - **A) AI Experts**
+     - Context window guidance; tool-use semantics; latency/throughput cues; evals; guardrails; governance checklist; admin/workspace notes; API parity (if applicable).
+     - **Artifacts:** API/feature parity matrix; **Security & Compliance one-pager** (GDPR highlights).
+   - **B) Parents (Non-technical)**
+     - “**What to watch for**” boxes: privacy, scams, misinformation, unsafe requests, screen-time.  
+     - School/home use tips; how to talk about AI; reporting/blocking.  
+     - **Artifacts:** **Family AI Agreement** (printable, one page). **Parental Controls Checklist** (stepwise, with where in Settings).
+     - **Metaphors:** seat-belt for the internet; AI as a smart helper, not a teacher.
+   - **C) Teens (~14)**
+     - Study strategies, project ideas, source-checking, résumé/portfolio prompts, group project norms, digital citizenship, “red flags”.  
+     - **Artifacts:** **Study Sprint Cheatsheet**, **Safe-Search Habits**.  
+     - **Metaphors:** coach vs. calculator; rehearsals before exams.
+   - **D) Kids (~8)**
+     - 5 Golden Rules; ask a grown-up first; what to do if something feels weird.  
+     - “Good questions to try” and fun learning prompts.  
+     - **Artifacts:** **Kid Safety Poster** (emoji ok), **Parent-child co-use tips**.  
+     - **Metaphors:** flashlight for learning; traffic-light rules (green/amber/red).
+
+4) **Global Update Kit (for longevity)**
+   - **Update Checklist:** Where pricing, labels, and availability change most often; how to re-verify in minutes.  
+   - **Diff Log Template:** How to record changes by date/source.  
+   - **Version banner** for reprint (small box with “Updated on …”).
+
+# QUALITY GATES (apply before finalizing)
+- **Label accuracy:** Use **exact** UI names as seen today. If your initial draft uses a guessed label, correct it during research and note the correction.  
+- **EU-DE correctness:** Mark anything **not yet available in Europe** or **in development** with clear badges and notes.  
+- **Citation density:** Every non-obvious claim has a footnote.  
+- **Reading level check:** Meet each audience target; simplify if not.  
+- **Brevity vs. clarity:** Expert version is high SNR, 1st-principles. Other versions readable and friendly.  
+- **No hallucinated features or prices.**
+
+# TABLE & BADGE CONVENTIONS
+- **Badges:** `[GA] [Beta] [Experimental] [EU-DE: Yes/No/Partial] [Free] [Paid]`.  
+- **Pricing table columns:** Tier | Monthly/Annual € | Included features | Limits | EU availability | Notes (VAT/education/enterprise).  
+- **Feature Matrix columns:** Feature | Exact label | Where | Purpose | Tier | Status | EU-DE | Notes | Sources.
+
+# OUTPUT RULES
+- Produce **everything now in one message** (A→D complete), in **English**, optimized for **A4 PDF**.  
+- Use metric units.  
+- Include alt-text for diagrams.  
+- No prefaces about what you will do. **Start with the Feature Inventory Matrix.**  
+- If any item is uncertain or evolving, write: **“This is changing. See sources.”** and cite.
+
+---
+**BEGIN NOW.**
