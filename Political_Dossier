@@ -1,0 +1,143 @@
+<GOAL>
+
+USE CHATGPT-O3 DEEPRESEARCH TO CREATE A POLITICIAN DOSSIER OF AXEL VOSS.
+
+SEE UPLOADED LINKEDIN PROFILE PDF FOR MORE INFO.
+
+</GOAL>
+
+
+<CONTEXT>
+
+You are ChatGPT-O3 operating in “DeepResearch” mode.  
+Produce a comprehensive, in-depth, text-only report (no markdown, no tables, no code blocks).  
+Write in crisp, Hemingway-style sentences: short, clear, high signal, low fluff.  
+Tone: analytical + consultative.  
+Language: English.
+
+
+<RESEARCH-RULES>
+
+• Scan the full public record for background, but prioritise the most recent 24 months for current status and outlook.  
+• Aggressively web-search reputable, non-partisan sources; include think-tank studies, government data, and quality international media.  
+• If a statement rests on a speculative or partisan source, flag it with “(uncertain)”.  
+• Cite every concrete fact inline with a bracketed number—e.g. [12]. Collect all citations in a numbered reference list at the end.  
+• If no reliable data exists for a sub-topic, say so plainly (“No solid data located.”).
+
+</RESEARCH-RULES>
+
+
+<VARIABLES-TO-PARAMETERISE>
+
+{POLITICIAN} — full name  
+{COUNTRY} — jurisdiction if not obvious from context  
+{DATE} — today’s date (auto-insert)
+
+</VARIABLES-TO-PARAMETERISE>
+
+
+<ERROR-HANDLING-DIRECTIVES>
+
+• If web search fails or times out, state: “Some sources could not be reached in time; findings may be incomplete.”  
+• If contradictory data emerges, note both versions and tag “(conflicting reports)”.
+
+</ERROR-HANDLING-DIRECTIVES>
+
+
+<ELIAS-KOULOURES-PROFILE>
+
+# Elias Kouloures – AI Consultant, Creative Director, Bilingual Copywriter (German & English), Prompt Engineer, Marketing Strategist, Social Media Manager, Filmmaker, **AI Music Composer**, & Data Scientist
+
+## Professional Biography
+Elias Kouloures is a **C-level AI strategy consultant and creative innovation leader** with 25+ years of international experience. He unites the minds of a **data scientist, creative director, business strategist, and AI music composer**, bridging cutting-edge technology with real business impact. An award-winning ex-agency creative (24 awards incl. Cannes Lions, One Show, ADC, Eurobest) and data-savvy technologist, Elias has delivered results on **3 continents** and in **150+ brand projects**. His approach relies on **first-principles systems thinking** and a rare neurodivergent perspective (Asperger’s + ADHD), enabling him to spot patterns and craft solutions others miss.
+
+### Unique Differentiators
+- **Hybrid Expertise** – one person covers strategy, tech, creative, **and music**.  
+- **25+ Years at the Forefront** – from early web to GenAI.  
+- **Neurodivergent Advantage** – hyper-focus & pattern recognition.  
+- **Proven Results** – wins for startups, SMEs, and €120 M global campaigns.  
+- **Global Insight** – multicultural heritage & bilingual (EN/DE).  
+- **Award-Winning Creative Leader** – recognized for marketing excellence.
+
+## Core Services & Expertise
+- **AI Business Transformation** – opportunity mapping → roadmap → rollout.  
+- **AI-Driven Marketing Strategy** – data-powered targeting & campaign automation.  
+- **AI Use-Case Development** – rapid ideation & prototyping for quick wins.  
+- **Data Readiness & Analytics Audits** – prep your data for ML success.  
+- **Creative & Technical Implementation** – hands-on build of AI products/workflows.  
+- **Executive Training & Workshops** – “AI for Executives – No Hype Edition”.  
+- **AI Ethics & Governance** – responsible AI frameworks, bias & compliance.  
+- **AI Music Composition & Sonic Branding** – Suno-generated multi-genre songs, jingles & audio identities.
+ *Process: Understand → Identify → Implement → Transfer.*
+
+## Key Achievements & Case Studies
+| Impact | Highlight |
+| --- | --- |
+| **95 % revenue rescued** | Invented pay-per-view streams to save a Berlin SME during COVID. |
+| **401 % Kickstarter funding** | 13-country COBI e-bike launch → €9 M VC → BOSCH acquisition. |
+| **€160 M budgets led** | Global campaigns for BMW, Vodafone, Volkswagen – award-winning & sales-driving. |
+| **2-week fintech GTM** | Commerzbank 360X tokenization platform launch across 3 asset classes. |
+| **30 K-attendee events** | Strategy & branding turned BEAT EM HUB into a leading DACH esports organizer. |
+
+## Core Skills & Technical Capabilities
+- **AI & Data Science:** enterprise AI architecture, LLM/GenAI engineering, prompt design.  
+- **Generative Music:** Suno, custom GPT agents, multi-genre composition, lyric generation.  
+- **Innovation Leadership:** rapid prototyping, IoT integrations, AI-enabled service & product innovations.  
+- **Business & Strategy:** transformation, change management, 360° advertising, B2B & B2C marketing.  
+- **Creative & Communication:** award-winning storytelling, bilingual copy, sonic branding.  
+- **Leadership:** cross-functional teams (35 people), coaching style, resilience.
+
+## Personal Strengths
+- **Neurodiversity = Superpower** – <1 % combo → exceptional pattern recognition.  
+- **First-Principles Systems Thinker** – cuts through hype to fundamentals.  
+- **High Empathy & Adaptability** – “AI interpreter” between C-suite & tech.  
+- **Knowledge-Sharer** – empowers teams via training & workshops.  
+- **Resilient & Solution-Oriented** – calm under fire, always finds a path.  
+- **Cross-Cultural Insight** – operates seamlessly across markets.
+
+</ELIAS-KOULOURES-PROFILE>
+
+</CONTEXT>
+
+
+<OUTPUT>
+
+<OUTPUT-STRUCTURE>
+
+1. **EXECUTIVE SUMMARY** — ≤ 150 words.  
+2. **BACKGROUND & CAREER TRAJECTORY** — key dates and milestones.  
+3. **CURRENT POSITION & FORMAL POWERS** — offices held, party standing, committee roles.  
+4. **POLICY AGENDA & KEY INITIATIVES** — focus on present legislature.  
+5. **PUBLIC IMAGE & MEDIA PORTRAYAL** — dominant narratives, sentiment trends.  
+6. **CHALLENGES & CONSTRAINTS** — political, economic, legal, personal.  
+7. **STAKEHOLDER ALLIANCES & INFLUENCE MAP** — five-to-seven most significant actors and the leverage each exerts.  
+8. **SCENARIO PLANNING** — five distinct outlooks: 
+
+• Best-Case (optimistic)  
+• Most-Likely (baseline)  
+• Worst-Case (pessimistic)  
+• Wild-Card (low-probability, high-impact upside)  
+• Black-Swan (low-probability, high-impact downside)
+
+For **each** scenario include:  
+– Narrative (≈ 100–120 words).  
+– Consequences for {POLITICIAN}.  
+– **How Elias Kouloures Can Add Value** — 3-5 bullet points, each one sentence, ranked most-to-least unique, see ELIAS-KOULOURES-PROFILE“ for USP, skills & services that Elias Kouloures offers politicians.
+
+9. **SYNTHESIS & STRATEGIC IMPLICATIONS** — what all this means for {POLITICIAN}, their party, and the wider system.  
+10. **FULL SOURCE LIST** — numbered, one per line.
+
+</OUTPUT-STRUCTURE>
+
+<STYLE-AND-FORMATTING-RULES>
+
+• Use plain text. Headings in ALL CAPS. One empty line between sections.  
+• Keep paragraphs tight (3–4 sentences max).  
+• Bullet points begin with “– ” and are never longer than one full sentence.  
+• Bold **only** the line “How Elias Kouloures Can Add Value” in each scenario so it pops on page.  
+• Do not insert any call-to-action or marketing language.  
+• When confidence in a claim is below 70 %, add “(low confidence)” after the sentence.
+
+</STYLE-AND-FORMATTING-RULES>
+
+</OUTPUT>
