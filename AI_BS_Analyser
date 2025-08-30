@@ -119,3 +119,123 @@ C. Benchmarks & evaluation notes
 - Do **not** reveal hidden chain-of-thought; provide concise rationales only.
 
 
+
+--- Add as extra PDF these examples ---
+
+# BS Analyser GPT - Examples.pdf
+
+---------------------------------------
+
+
+# BS REPORT EXAMPLES (save this as **“BS_Report_Examples.pdf”** and upload)
+
+## Example 1 — Mixed Claims from a Press Release (Deep Dive, EN)
+
+### Input Excerpt
+“Our agent suite achieves **AGI-level reasoning** and **automates 95% of finance back-office tasks** with **99.9% accuracy**, cutting costs by **80% in 30 days**.”
+
+### TL;DR
+- No accepted AGI benchmark; claims overstate generality.
+- Automation and accuracy figures lack methodology and audited baselines.
+- 80% cost reduction in 30 days ignores change management and integration realities.
+
+### Claims & BS Scores
+1. **“AGI-level reasoning”** — “achieves AGI-level reasoning”      **BS:** 88% | **Confidence:** 45/100      One-liner: No consensus AGI metric; current evals don’t imply broad generality.      • Evidence: Field lacks accepted AGI definition/benchmark [1]      • Feasibility/Evals: No multi-domain, peer-reviewed generalization shown      • Business realism: N/A      • Risks/Unknowns: Eval leakage; narrow task tuning
+
+2. **“Automates 95% of finance back-office tasks”** — “automates 95% …”      **BS:** 76% | **Confidence:** 50/100      One-liner: Task heterogeneity and controls make 95% end-to-end automation unlikely without scoped workflows.      • Evidence: Limited audited case studies at that coverage [2]      • Feasibility/Evals: Human-in-the-loop, exceptions handling absent      • Business realism: Integration, controls, audit, SoD requirements ignored      • Risks/Unknowns: Error cost, escalation paths
+
+3. **“99.9% accuracy”** — “with 99.9% accuracy”      **BS:** 81% | **Confidence:** 40/100      One-liner: No dataset/methods disclosed; unclear metric and class imbalance.      • Evidence: Vendor-reported metrics without neutral replication [3]      • Feasibility/Evals: No baselines/CI, domain drift not addressed      • Business realism: False positives may trigger material financial risk      • Risks/Unknowns: Sampling bias; eval contamination
+
+4. **“80% cost reduction in 30 days”** — “cutting costs by 80% in 30 days”      **BS:** 72% | **Confidence:** 42/100      One-liner: ROI claim lacks baseline, unit economics, and change-mgmt assumptions.      • Evidence: No audited TCO model or neutral study [4]      • Feasibility/Evals: Latency/throughput trade-offs unaddressed      • Business realism: Hiring, training, controls, integration timelines ignored      • Risks/Unknowns: Rework, incident costs, compliance reviews
+
+### Evidence & Citations
+[1] Surveys/editorials on AGI definitions & evaluation gaps (≤24 mo)   [2] Industry reports on automation coverage in finance ops (≤24 mo)   [3] Neutral benchmark guidance on reporting accuracy and leakage risks   [4] Executive research on AI ROI/TCO realization timelines
+
+### Contradictions & Uncertainties
+- No methods section or datasets disclosed; no third-party audit.   - Aggressive timelines conflict with typical enterprise rollout durations.
+
+### Audience View A — AI Experts (Academic Review)
+- Request task suite details, baselines, ablations; report statistical significance; disclose datasets and guard against leakage; provide cross-domain generalization evidence.
+
+### Audience View B — Non-Tech Executives (Gartner-Style)
+- Pilot first; define ROI gates; require audited metrics and SOC/GxP/SOX controls; prefer scoped workflows; negotiate staged milestones and clawbacks.
+
+### Audience View C — General Public (Product Teardown)
+- What it likely does: automates **narrow** repetitive tasks with oversight.   - What to watch: exaggerated “AGI” language; unverified accuracy.   - Try safely: keep a human in the loop; review outputs before acting.
+
+### 3×3 Expertise Questions (claim-linked)
+**Technical:**   T1. Which benchmarks (↔ #1, #3) demonstrate cross-domain generalization with ablations?   T2. How do you prevent eval leakage and handle domain drift (↔ #3)?   T3. What is the exception-handling design for out-of-distribution tasks (↔ #2)?
+
+**Business:**   B1. Show the TCO model and assumptions behind the 80% figure (↔ #4).   B2. What is the escalation/handoff rate and its cost impact (↔ #2)?   B3. What change-mgmt plan enables 30-day realization (↔ #4)?
+
+**Practical:**   P1. Provide two audited case studies with pre/post baselines (↔ all).   P2. Outline rollback/kill-switch procedures for errors (↔ #2, #3).   P3. Describe compliance controls (SoD, audit trails) for finance ops (↔ #2).
+
+---
+
+## Example 2 — Sales Deck ROI Claim (Quick Scan, EN)
+
+### TL;DR
+- “10× ROI in 30 days” lacks baseline and audited math; expect pilot-scale benefits first.
+
+### Claims & BS Scores
+1. **“10× ROI in 30 days”** — “10× ROI … 30 days”      **BS:** 72% | **Confidence:** 40/100      One-liner: No baseline, unit economics, or adoption assumptions provided.      • Evidence: Absence of neutral audits [1]      • Feasibility/Evals: Latency/quality not quantified      • Business realism: Change mgmt and retraining cycles ignored      • Risks/Unknowns: Escalation costs; compliance review
+
+### Evidence & Citations
+[1] Executive research on typical AI ROI timelines & verification practices
+
+### Audience Views (condensed)
+- **Experts:** Request TCO breakdown, sensitivity analyses, power calculations.   - **Executives:** Stage-gated pilot; KPI contract; clawbacks.   - **Public:** Treat as marketing; look for independent reviews.
+
+### 3×3 Questions (claim-linked)
+T1. Provide ROI formula and baseline data sources (↔ #1).   B1. What deflection/containment assumptions drive 10× (↔ #1)?   P1. What telemetry validates adoption in 30 days (↔ #1)?   (plus two more per category as needed)
+
+---
+
+## Example 3 — Consumer App Emotion Claim (Deep Dive, EN)
+
+### Input Excerpt
+“This selfie app detects your **mood** with **99% accuracy**.”
+
+### TL;DR
+- Facial emotion inference alone is unreliable across contexts; 99% is implausible without rigorous, diverse validation.
+
+### Claims & BS Scores
+1. **“99% mood accuracy from selfies”** — “99% accuracy”      **BS:** 85% | **Confidence:** 35/100      One-liner: No dataset or cross-cultural validation; likely overfit/imbalanced.      • Evidence: Critical literature on facial emotion inference limits [1]      • Feasibility/Evals: No generalization across lighting, devices, cultures      • Business realism: False positives carry user-harm and trust risks      • Risks/Unknowns: Consent, privacy, dataset provenance
+
+### Evidence & Citations
+[1] Academic reviews challenging reliability of facial emotion recognition (≤24 mo)
+
+### Audience Views (condensed)
+- **Experts:** Demand dataset cards, demographically stratified metrics, and fairness audits.   - **Executives:** Risk review (privacy, consent), opt-in only, limit claims in marketing.   - **Public:** Treat outputs as **guesses**, not facts; don’t use for decisions about others.
+
+### 3×3 Questions (claim-linked)
+T1. What’s the class distribution and CI at 95% (↔ #1)?   B1. What’s the incident response for misclassification harms (↔ #1)?   P1. How is consent captured and stored (↔ #1)?
+
+---
+
+## Example 4 — German Input (Kurz, DE)
+
+### TL;DR
+- Übertriebene Automations- und Genauigkeitszahlen ohne Methodenangaben; unabhängige Nachweise fehlen.
+
+### Claims & BS Scores
+1. **„99,9 % Genauigkeit in allen Branchen“**      **BS:** 83 % | **Confidence:** 38/100      One-liner: Keine Datensätze/Baselines genannt; Branchen-Generalität unbelegt.      • Evidence: Keine neutralen Benchmarks [1]      • Business realism: Integrations-/Freigabeprozesse ignoriert
+
+### Evidence & Citations
+[1] Neutrale Benchmark-Leitfäden/Studien (≤24 Monate)
+
+### 3×3 Fragen (verkürzt)
+T1. Welche Benchmarks/Baselines?   B1. Welches TCO-Modell?   P1. Welche Rollback-Prozesse?
+
+---
+
+## Appendices (use as patterns in reports)
+**A. Calculation Snippet (Python, example cues)**
+- Token cost = (price_per_1k_tokens / 1000) × total_tokens   - Throughput check = target_RPS × avg_latency must satisfy SLO   - ROI sanity = (savings − costs) / costs; include adoption & escalation rates
+
+**B. Benchmark Notes (example cues)**
+- Report baselines, ablations, CI, dataset splits; guard against leakage; disclose prompts/evals.
+
+**C. Uncertainties (phrasing cues)**
+- “Evidence conflicting across Tier-1/2 sources.”   - “Older than 24 months; may not reflect current SOTA.”   - “Insufficient methodology to reproduce claim.”
+
