@@ -1,0 +1,166 @@
+# CHATGPT-5 DEEPRESEARCH — LONGEVITY ESCAPE VELOCITY (LEV)
+
+**Mode:** Deep-dive, high signal-to-noise.
+**Date context:** August 12, 2025.
+**Primary audience:** (1) Layperson (Hemingway style). (2) Professional (technical).
+**Region focus:** Global insights with **EUR price tags**. **Flag** when items are unavailable, illegal, or not standard-of-care in **Germany/EU**.
+
+—
+
+## ROLE
+You are an expert research synthesizer (biogerontology, translational medicine, clinical evidence appraisal, health economics, science communication). Produce a **structured, PhD-level report** on the **current status of Longevity Escape Velocity (LEV)**.
+
+## CORE RULES
+- **BROWSE THE WEB** and scholarly databases. Prefer systematic reviews, meta-analyses, large RCTs, major cohorts, guidelines, regulatory documents, and high-quality preprints (clearly flagged).
+- **Cite every non-obvious claim** with numbered references (DOI/PMID/URL) and **access date**. Include ≥1 **2024–2025** source for time-sensitive claims.
+- Distinguish **evidence strength** (High/Moderate/Preliminary) and **confidence (0–100%)** for key claims.
+- Use **numbers over adjectives**; state ranges and units; separate **statistical** from **clinical** significance.
+- When evidence conflicts, present a **brief synthesis** of competing positions and why.
+- If unknown or uncertain, say **“Unknown”**.
+- **No private chain-of-thought.** Provide **concise, evidence-based rationales** only.
+- **Prices:** Quote **EUR** (EU market, **Q3 2025**), specify **one-time vs monthly**, and give a range. Optionally add **USD** in parentheses. Note region-specific VAT where relevant.
+- **Regulatory:** State **EMA/PEI/BfArM** (EU/DE), **FDA** (US), MHRA (UK) status where relevant. **Flag** “Not available in Germany/EU,” “Off-label,” or “Investigational only” clearly.
+
+—
+
+## OUTPUT STRUCTURE (IN ORDER)
+0. **Title Page** — Title; date; author “GPT-5”; version; 1-sentence abstract.
+1. **Table of Contents** — Hyperlinked headings.
+2. **Executive Summary (≤300 words)** — Top claims with confidence, 5 key takeaways, 3 biggest uncertainties.
+3. **Plain-Language Primer (Hemingway)** — What LEV is; how it differs from life expectancy gains; main misconceptions; ethical notes.
+4. **State of the Science** — Map to **Hallmarks of Aging**. Modalities: lifestyle, drugs/supplements, senolytics, immune/thymic, mitochondrial, plasma-based, **partial reprogramming**, cell/gene therapy (AAV/CRISPR), tissue engineering/organ replacement, diagnostics/biomarkers (incl. epigenetic clocks), AI-enabled discovery.
+5. **Evidence Appraisal** — Pivotal human data (RCTs, large cohorts, meta-analyses), ongoing/finished trials (phase, endpoints), translational gaps; **areas with no reliable evidence**.
+6. **Timelines**
+- **Historical** milestones (concise).
+- **Forward** roadmap with **scenario bands** (conservative/base/optimistic), dependencies, lead risks.
+- Include a **Mermaid Gantt** block.
+7. **Technical Deep Dive (Professional)** — Mechanisms, pathways, trial design, surrogate endpoint validity (epigenetic/functional clocks), manufacturing/safety, regulatory pathways (EMA/FDA), reproducibility issues, known controversies.
+8. **Controversies & Counterarguments** — Steelman the best critiques of LEV; rebut briefly; list **falsifiable predictions**.
+9. **Actionable Playbook (Personal Health)** — **Primary deliverable**.
+- **Sort by CATEGORY first**, then **by price (EUR) ascending within category**.
+- **Categories (at minimum):**
+A) **Food & Nutrition**
+B) **Physical Activity & Recovery**
+C) **Sleep**
+D) **Environment & Habits** (alcohol, tobacco, heat/cold, sun, air quality)
+E) **Preventive Care & Vaccination**
+F) **Diagnostics & Biomarkers** (incl. epigenetic clocks, blood panels, wearables)
+G) **OTC Supplements**
+H) **Prescription Medications** (by indication; e.g., dyslipidemia, T2D/obesity incl. **SGLT2/GLP-1**; metformin context; **rapalogs** caveats)
+I) **Procedures & Devices** (dental, sleep apnea, monitoring, etc.)
+J) **Experimental/Investigational** (senolytics, plasma-based interventions, NAD+ boosters, mitochondrial agents, **partial reprogramming**, gene therapies, organoids, bioprinting, fecal microbiota, psychedelics-assisted therapy where legal)
+- Each row **must** include:
+• **What to do** (concise)
+• **Why** (brief evidence-backed rationale; no step-by-step thought)
+• **Evidence level** (High/Moderate/Preliminary) + **key citations**
+• **Effect size** (metric, value, units; range if available) + **time-to-benefit**
+• **Risks/contraindications & who should avoid**
+• **Monitoring/metrics** (what to track)
+• **Regulatory status** (EU/DE, US, other)
+• **Price tag (EUR)** — one-time vs monthly; **sorted ascending within category**
+• **Access** (OTC/clinic/trial)
+• **Availability note for Germany/EU** (e.g., “**Not available/Restricted in DE/EU**”)
+• **References** (numbers)
+- **Visually warn** on risky/experimental items: add **⚠️Risk** label + one-line caution; add **“Investigational only—do not attempt
+outside regulated trials/specialist care”** where appropriate.
+10. **Risk Stratification & Personalization** — Show how recommendations shift by **age cohorts 25–45 / 45–65 / 65+**, sex, baseline risk, comorbidities, **budget**, and **risk tolerance** (Conservative/Moderate/Aggressive).
+11. **Methods & Sources** — Search strategy, inclusion/exclusion, bias checks, evidence grading rubric.
+12. **Glossary** — Lay + technical terms side-by-side.
+13. **References** — Numbered list; grouped (guidelines, RCTs, meta-analyses, cohorts, preprints).
+14. **Appendices** —
+- **Key Trials Table** with **NCT IDs** and endpoints.
+- **Company/Therapy Landscape** (sponsors, stage, mechanism).
+pastedGraphic.png
+- **Company/Therapy Landscape** (sponsors, stage, mechanism).
+- **Biomarker Panels** (bloods, imaging, epigenetic/functional clocks) with typical EU/DE labs. - **Budget Scenarios (ASCII)** for €50/€150/€500 monthly stacks.
+- **JSON Appendix** (schema below).
+
+—
+
+## STYLE
+- **Lay sections:** Hemingway. Short sentences. Active voice. No fluff. Define jargon in parentheses. - **Technical sections:** Exact terminology. Concise. No simplifications.
+- Use **H1/H2/H3** headings; number **Tables** and **Figures**. Keep paragraphs tight.
+
+—
+
+## REQUIRED TABLES & VISUALS
+- **Table 1:** Actionable Playbook (sorted by **category**, then **€ price ascending**).
+- **Table 2:** Interventions vs **effect size**, **evidence level**, **risk**, **cost** (overview matrix). - **Figure 1:** **Mermaid Gantt** timeline of milestones and projections.
+- **ASCII** budget tables for consumer tiers.
+- If figures cannot render, describe succinctly.
+
+—
+
+## ETHICS & SAFETY
+- Include bold disclaimer: **Educational only. Not medical advice. Consult qualified clinicians.**
+- **Flag regional legal/regulatory limits**, especially **Germany/EU**.
+- For experimental items: ** ⚠️Investigational** — **do not attempt outside trials/specialist supervision**.
+
+—
+
+## SPECIFIC CONTENT TO INCLUDE (AT MINIMUM)
+- Lifestyle: aerobic (VO2max), resistance training, sleep optimization, nutrition patterns (Mediterranean-style, protein targets), alcohol/tobacco, dental care, heat/cold.
+- Supplements: creatine, vitamin D (context), omega-3, others with actual human evidence.
+- Rx (indication-based): statins, antihypertensives, **SGLT2**, **GLP-1**, metformin (who benefits/doesn’t), **rapalogs** (caveats).
+- Advanced/experimental: **senolytics**, **thymic/immune rejuvenation**, **NAD+** strategies, mitochondrial agents, plasma/apheresis, **partial reprogramming**, **AAV/CRISPR** gene therapy, organoids/bioprinting, fecal microbiota, psychedelics- assisted therapy (legal status).
+- Diagnostics/biomarkers: epigenetic clocks, functional aging measures, continuous monitoring/wearables; **validity and limitations**.
+
+—
+
+## LENGTH & DENSITY
+- Target **3,500–6,000 words**. Prioritize **density over length**. Bullet where possible. Avoid repetition. No filler.
+
+—
+
+## CITATION & TIMESTAMPING
+- After each section, list **key citations** [1], [2]... with DOI/PMID/URL and **access date**. - Mark **preprints** clearly.
+- For prices/regulatory claims, add **region + date** (e.g., “EU price checked **2025-08**”).
+
+—
+
+## TIMELINE BLOCK (EXAMPLE FORMAT) ```mermaid
+gantt
+title LEV Milestones & Projections dateFormat YYYY-MM-DD
+section Historical
+Discovery_of_Senescence :done, 1961-01-01, 1961-12-31
+Clocks_Generation1 :done, 2013-01-01, 2013-12-31
+section Forward (Scenarios)
+Near-term_Therapies_Validated (Conservative) :active, 2025-01-01, 2029-12-31 Combination_Trials (Base) :2026-01-01, 2032-12-31
+Robust_Multimodal (Optimistic) :2028-01-01, 2036-12-31
+JSON APPENDIX — SCHEMA
+Provide a machine-readable JSON object at the end:
+{
+"date_generated": "YYYY-MM-DD",
+"definition_LEV": "Concise definition.",
+"timelines": [
+{ "milestone": "Example", "year": 20XX, "type": "historical|projected", "uncertainty": "low|med|high" }
+],
+"interventions": [
+{
+"name": "Item",
+"category": "Food & Nutrition | Physical Activity & Recovery | Sleep | Environment & Habits | Preventive Care & Vaccination | Diagnostics & Biomarkers | OTC Supplements | Prescription Medications | Procedures & Devices | Experimental/Investigational", "evidence_level": "High|Moderate|Preliminary",
+"effect_size": { "metric": "e.g., all-cause mortality RR", "value": 0.85, "units": "RR", "interval": "[0.78,0.92]" },
+"risk_level": "Low|Moderate|High",
+"regulatory_status": { "EU": "Approved/Off-label/Investigational", "DE": "Approved/Restricted/Unavailable", "US": "Approved/Off- label/Investigational", "Other": "..." },
+"price_eur": { "one_time": [min, max], "monthly": [min, max] },
+"price_usd": { "one_time": [min, max], "monthly": [min, max] },
+"access_pathway": "OTC/clinic/trial",
+"monitoring": ["metric1", "metric2"],
+"availability_note_DE_EU": "e.g., Not available in Germany/EU",
+"key_citations": ["DOI/PMID/URL"]
+}
+} ] }
+DELIVERABLE QUALITY CHECK (BEFORE FINALIZING)
+• All categories present.
+• Playbook sorted by category, then € price ascending. Risky items have ⚠️ label and warnings. • EU/DE availability flagged wherever relevant.
+• Citations present for claims and prices/regulatory statuses (with dates).
+• Conflicts/uncertainties explicitly noted.
+• Executive Summary terse and quant-focused.
+• Lay vs Technical sections clearly separated.
+• Timeline + Mermaid included.
+• JSON appendix included and valid.
+
+DISCLAIMER (PLACE NEAR FRONT AND IN PLAYBOOK)
+
+Bold text: Educational purposes only. Not medical advice. Consult qualified clinicians. Regional regulations apply. Experimental items are not for unsupervised use.
+
