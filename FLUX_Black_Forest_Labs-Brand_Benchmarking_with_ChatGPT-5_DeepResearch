@@ -1,0 +1,268 @@
+# BLACK FOREST LABS & FLUX – DEEPRESEARCH PROMPT
+
+
+## ROLE & MANDATE
+
+Act as a **world-class advertising strategist**, a hands-on **AI product CEO**, a **competitive-intelligence lead**, and a **forensic research librarian**. Your **mission** is to produce the **most structured, detailed, and comprehensive deep-research analysis** of **Black Forest Labs (BFL)** and its **FLUX image generation models**, benchmarked against **all relevant competitors and adjacent substitutes**, and to output a **clean "ground-truth" dataset** suitable for downstream analysis and prompting.
+
+### Meta-constraints
+
+*   **"Rigor first:** prioritize verifiable facts over opinions; when uncertain, output “Unknown / Not publicly disclosed” and log the gap."
+*   **"Separation of concerns:** clearly separate Facts (with citations), Interpretation, and Assumptions."
+*   **"Evidence ledger:** every non-trivial claim must carry a source citation and retrieval date."
+*   **"No chain-of-thought exposure:** provide concise Reasoning Briefs (bullet summaries of logic) and all external artefacts (tables, datasets, quotes <= 25 words, code used for parsing), but do not reveal step-by-step internal deliberations."
+
+---
+
+# SCOPE & COVERAGE ✅
+
+## 1. Company Core (BFL)
+
+*   **Founders, funding, investors, HQ, incorporation details, timeline** (major releases, hires, partnerships, product updates).
+*   **Product & service map** with deep focus on **FLUX family (FLUX.1, FLUX 1.1 Pro, Pro Ultra, Kontext, Fill**, and any other variants or deployment forms: **hosted app, API, on-prem, open weights**).
+*   **Business model** (**B2C, B2B, API pricing, enterprise, licensing, integrations**), **go-to-market, channels, support model, partner ecosystem**.
+*   **Brand reputation** (local 🇩🇪, EU, global), **community sentiment, developer traction, enterprise trust signals**.
+*   **Risk, compliance & policy** (content safety, watermarking, data usage, IP stance, EU AI Act/GDPR posture).
+
+## 2. Competitive Landscape (Direct & Adjacent)
+
+*   **Direct T2I/Image tools**: Midjourney, OpenAI (DALL-E / GPT-Image), Adobe Firefly, Ideogram, Stability (Stable Diffusion/SDXL lineage), Leonardo, Playground, Krea, Canva Magic Media, Google (Imagen family), Microsoft Designer (DALL-E powered), Shutterstock & Getty AI, etc.
+*   **Adjacent substitutes / "sources of business"**: full-stack design suites (Adobe CC, Figma), stock marketplaces, photo editors (Photoshop/Generative Fill, Affinity), creative suite AIs, enterprise content platforms, **on-device/OEM** AI imaging, **video/multimodal** creation tools that divert budget.
+*   For each: **products, models, licensing, pricing, capabilities, guardrails, distribution, target segments**, and **USPs vs. FLUX**.
+
+## 3. Customer Profiles & Journeys
+
+*   **Segments** in **AI / Image Gen / T2I / I2I / Manipulation, B2C & B2B**.
+*   **JTBDs**, purchase triggers, evaluation criteria, integration needs, budget range, procurement path, champions vs blockers.
+*   **Journey maps** from **Awareness → Evaluation → Trial → Adoption → Expansion → Renewal/Churn**, with touchpoints, KPIs, friction points, and content/tools needed.
+
+---
+
+# REQUIRED DELIVERABLES 📦
+
+1.  **Executive Summary** (≤ 500 words) — terse, board-ready; 5–10 definitive takeaways; 5 key risks; 5 blue-ocean angles.
+2.  **BFL Deep Dossier** (bullet-dense):
+    *   History & Trajectory (dated milestones)
+    *   Product/Service Overview (feature matrix)
+    *   Performance Review (releases, reliability, model quality)
+3.  **Frameworks Pack** (each as its own subsection):
+    *   SWOT
+    *   Porter's Five Forces
+    *   BCG Growth-Share Matrix (define segment axes & share proxies)
+    *   Business Model Canvas
+    *   PESTEL
+    *   Balanced Scorecard
+    *   McKinsey 7S
+4.  **FLUX Model Family Deep-Dive**
+    *   Version-by-version: purpose, architecture family, inputs/outputs, strengths/limits, editing & inpainting/outpainting, upscaling, fine-tuning/LoRA, controls (ControlNets, IP-Adapter), compositionality, typography, photorealism, style diversity, safety filters, NSFW policy, watermarks, hardware/VRAM needs, throughput, latency.
+    *   Benchmark table (if public) + practical quality proxies (prompt fidelity, text rendering, hands, faces, consistency).
+    *   Pricing & licensing by channel (consumer app, API, enterprise).
+    *   Release Timeline with dates & links.
+5.  **Competitor Landscape**
+    *   Feature-parity & USP matrix across all rivals.
+    *   Pricing tables (dated), rate limits, API terms, commercial rights.
+    *   Positioning map (axes: quality vs control; consumer vs enterprise; openness vs closed).
+6.  **Customer Intelligence**
+    *   ICP dossiers (B2C & B2B), journey maps, objections, win/loss patterns, playbooks.
+
+5.  **Competitor Landscape**
+    *   Feature-parity & USP matrix across all rivals.
+    *   Pricing tables (dated), rate limits, API terms, commercial rights.
+    *   Positioning map (axes: quality vs control; consumer vs enterprise; openness vs closed).
+6.  **Customer Intelligence**
+    *   ICP dossiers (B2C & B2B), journey maps, objections, win/loss patterns, playbooks.
+7.  **Blue-Ocean Strategy Kit**
+    *   White-space opportunities, category design angles, wedge GTMs, partnerships, moats (data, distribution, workflows, ecosystem).
+8.  **Ground-Truth Dataset** (primary output):
+    *   Provide both CSV and JSON (inline code blocks) following the schemas below.
+    *   Include Data Dictionary and Provenance Ledger (source URL + title + date + claim IDs).
+9.  **Appendices**
+    *   Glossary, Methodology, Limitations, Open Questions.
+
+---
+
+**DATA SCHEMAS (authoritative)** 📦
+
+A. Company Schema (JSON)
+
+{
+  "company_id": "string",
+  "name": "string",
+  "hq_country": "string",
+  "founded_year": 0,
+  "founders": ["string"],
+  "funding_total_usd": 0,
+  "investors": ["string"],
+  "business_models": ["B2C","B2B","API","Enterprise","On-prem","Open-weights"],
+  "products": ["string"],
+  "brand_notes": "string",
+  "compliance_notes": "string",
+  "last_updated_utc": "YYYY-MM-DD"
+}
+
+
+B. Model Schema (T2I/I2I)
+
+{
+  "model_id": "string",
+  "company_id": "string",
+  "name": "string",
+  "version": "string",
+  "release_date": "YYYY-MM-DD",
+  "modalities": ["text-to-image","image-to-image","inpainting","outpainting","upscaling"],
+  "controls": ["ControlNet","IP-Adapter","Depth","Pose","Sketch","None"],
+  "fine_tuning": {"supported": true, "methods": ["LoRA","DreamBooth","None"]},
+  "capabilities": {
+    "photorealism": "Low/Med/High",
+    "typography": "Low/Med/High",
+    "style_diversity": "Low/Med/High",
+    "prompt_fidelity": "Low/Med/High"
+  },
+  "safety": {"nsfw_policy": "string", "watermarking": "Yes/No/Unknown"},
+  "perf": {"throughput_img_per_min": null, "latency_sec": null, "vram_gb_min": null},
+  "pricing": [{"channel":"API|App|Enterprise","unit":"image|credit|seat|token","price":"string"}],
+  "license_rights": "Personal|Commercial|Enterprise|Restricted",
+  "notes": "string",
+  "sources": ["url1","url2"],
+  "last_updated_utc": "YYYY-MM-DD"
+}
+
+
+C. Pricing Snapshot Schema
+
+{
+  "product_id": "string",
+  "date": "YYYY-MM-DD",
+  "plan_name": "string",
+  "price_period": "monthly|annual|paygo",
+  "price_amount": 0,
+  "currency": "USD|EUR|... ",
+  "quota": "string",
+  "rate_limits": "string",
+  "rights": "string",
+  "source": "url"
+}
+
+
+D. Customer Profile Schema
+
+{
+  "segment_id": "string",
+  "segment_name": "Pro Designer|Indie Creator|Agency|SMB Marketing|Enterprise Creative Ops|Game Studio|Ecom|Publisher|Edu|Gov",
+  "jobs_to_be_done": ["string"],
+  "evaluation_criteria": ["quality","control","speed","IP/safety","price","integration"],
+  "budget_range_usd": "string",
+  "stack_integrations": ["Adobe","Figma","Notion","Slack","GCP","AWS","Azure"],
+  "key_objections": ["string"],
+  "success_metrics": ["time_saved","content_quality","cost_per_asset"],
+  "personas": [{"role":"string","influence":"Low/Med/High"}]
+}
+
+
+E. Journey Event Schema
+
+{
+  "journey_id": "string",
+  "segment_id": "string",
+  "stage": "Awareness|Evaluation|Trial|Adoption|Expansion|Renewal|Churn",
+  "touchpoints": ["Docs","Gallery","Discord","X","YouTube","App","API","Sales"],
+  "kpis": ["signups","MAU","images/day","API calls","NPS","ARPA"],
+  "frictions": ["string"],
+  "content_needed": ["Guides","Benchmarks","Case studies","Templates"]
+}
+
+---
+# METHOD & QA 🔬
+
+*   **Collection**: use official docs, pricing pages, TOS/licensing, release notes, engineering blogs, reputable news, conference talks, and community posts (flagged as anecdotal). Record **URL + title + publication date + retrieval date**.
+*   **Triangulation**: require ≥2 **independent sources** for critical facts. If not available, mark as **Single-source**.
+*   **Normalization**: map all competitors to the above schemas; align units (USD, monthly) and date-stamp snapshots.
+*   **Red teaming**: log contradictions; resolve or mark **Contested** with both views.
+*   **Region & time sensitivity**: capture EU/DE vs US differences (pricing, rights, safety).
+*   **Output hygiene**: deduplicate entities; consistent IDs; human-readable and machine-parsable.
+
+---
+
+# ANALYTICAL FRAMEWORKS (explicit instructions) 🧩
+
+*   **SWOT**: 6–10 bullets each; tag **Fact, Inference, or Assumption**.
+*   **Porter's**: rate each force **Low/Med/High** with 2–3 drivers.
+*   **BCG**: define segments (e.g., **Prosumer T2I App, Enterprise API, Open-weights**) with relative share proxies (search interest, traffic, API adoption) and **growth rates** (market reports).
+*   **Business Model Canvas**: one tight table per company (BFL + top 5 rivals).
+*   **PESTEL**: EU-centric with global deltas.
+*   **Balanced Scorecard**: objectives, KPIs, targets, initiatives per quadrant.
+*   **McKinsey 7S**: bullet assessment + alignment risks.
+
+---
+
+# FLUX-SPECIFIC CHECKLIST 🧪
+
+*   Versions & variants (e.g., FLUX.1, 1.1 Pro, 1.1 Pro Ultra, Kontext, Fill, etc.) with release dates, intended use, notable improvements.
+*   Capabilities (photorealism, text rendering, consistency, prompt adherence), controls, fine-tuning, editing, in/out-painting, upscaling.
+*   Safety & rights (NSFW policy, watermarks, commercial usage).
+*   Perf & infra (latency, throughput, VRAM, cloud partners).
+*   Pricing & channels (consumer app, API, enterprise).
+*   Comparative prompts (standardized prompt set) to evaluate fidelity & style.
+
+
+---
+
+# OUTPUT FORMAT (strict) 📤
+
+1.  Markdown report with the section headers below. Use **bold** for keywords and one emoji in each H2 title. Only bullet points; no walls of text.
+    *   Executive Summary 🚀
+    *   BFL: History & Trajectory 🗺️
+    *   Products & Services 🧭
+    *   FLUX Family Deep-Dive 🔬
+    *   Performance Review 📈
+    *   Frameworks Pack 🧩 (SWOT, Porter, BCG, BMC, PESTEL, Balanced Scorecard, 7S)
+    *   Competitive Landscape 🥊
+    *   Customer Profiles & Journeys 👥
+    *   Brand Reputation 🌐
+    *   Blue-Ocean Opportunities 🌊
+    *   Risks & Compliance ⚖️
+    *   Ground-Truth Dataset 📊 (CSV + JSON + Data Dictionary + Provenance Ledger)
+    *   Appendices 📎 (Glossary, Methodology, Limitations, Open Questions)
+
+2.  Code blocks for:
+    *   `ground_truth.json` (entities: companies, models, pricing, segments, journeys).
+    *   `ground_truth.csv` (wide or tall; include header row).
+    *   `data_dictionary.md` (field names, types, allowed values).
+    *   `provenance_ledger.csv` (claim_id, entity_id, statement, url, pub_date, retrieved_utc).
+
+3.  Reasoning Briefs (bullets) at the end of each major section summarizing why the data supports the conclusion (no hidden step-by-step reasoning).
+
+
+---
+
+# QUALITY BAR & GUARDRAILS 🛡️
+
+*   **Accuracy**: never guess. Prefer **Unknown** over speculation.
+*   **Completeness**: if a field is N/A, state **Not applicable** and why.
+*   **Timeliness**: include "Data current as of: {UTC date}".
+*   **Comparability**: use the same prompts/criteria for model comparisons.
+*   **Reproducibility**: any reader should be able to re-locate each fact via the ledger.
+*   **Ethics/IP**: summarize each tool's IP & content policy as it affects commercial use.
+
+---
+
+# OPTIONAL FILTERS / KNOBS (set if provided)
+
+*   `focus_regions` : ["EU","US","APAC"]
+*   `target_audiences` : ["Prosumer","Agency","Enterprise IT","Creative Ops"]
+*   `depth_limit_per_competitor` : 200–400 words (analysis) + full dataset rows
+*   `priority_competitors` : e.g., ["Midjourney","OpenAI","Adobe","Ideogram","Stability","Leonardo","Krea","Playground","Shutterstock","Getty"]
+*   `omit_adjacent` : true|false
+
+---
+
+# START
+
+1.  If any **critical inputs** are missing (filters/knobs above), proceed with sensible defaults and log the assumption.
+2.  Produce outputs in the **exact order and formats** specified.
+3.  End with a **Checklist of Open Questions** for follow-up research.
+
+
+
+
+
