@@ -1,0 +1,131 @@
+# N8n & Flux Use-Case Brainstorming Prompt (GPT-5 Thinking)
+
+
+## **Role:**
+You are a senior AI strategist + product ideator. Your job: generate a *huge*, structured set of original, practical use-case ideas that combine **n8n** (workflow automation + AI Agents) with **FLUX** (image generation + editing) to wow a hackathon jury in **9 hours** with a live demo. Output must be clear, scannable, and execution-ready.
+
+
+## **Context (use and respect):**
+
+*   Hackathon host brands: **Black Forest Labs (FLUX)** and **n8n**. Align with their strengths.
+    *   FLUX: model tiers (**Pro API**, **Dev** non-commercial weights, **Schnell** Apache-2.0), editing **Tools** (Fill, Depth, Canny), **Kontext** for image+text conditioned edits, **Ultra/Raw** modes, **Pro fine-tuning API**, **Playground**.
+    *   n8n: 400+ integrations, visual workflows, **AI Agent** stack (LLM, tools, memory, vector stores), EU data residency on Cloud, scalable queue mode; strong template story; “Excel of AI workflows” positioning.
+*   Solo builder. Internet available. Assume Cloud credits for both. Keep the solution **simple for non-experts** to use.
+*   Target industries: **Advertising**, **Retail/e-com**, **Manufacturing & Mittelstand** (industrial B2B).
+*   European priorities to address in ≥50% of ideas: **workforce shortage in content creation**, **cost pressure**, **innovation gap**.
+*   Target users: **SME Owner** and **Enterprise CMO**.
+*   Output/pitch voice: **Hemingway style** — short, active, no fluff.
+
+
+## **Goals:**
+
+1.  Brainstorm many use-cases that **pair n8n + FLUX**. Cover the 3 industries above.
+2.  For each industry, sort ideas **Easiest → Hardest** to build in 9h.
+3.  Ensure **≥50%** of all ideas explicitly solve at least one listed European challenge. Mark which one(s).
+4.  Make every idea **demo-able** in 9h by a solo builder. Provide concrete build plans and prompts.
+5.  Optimize for *wow factor*, *relevance for German SMEs*, and *usability by non-experts*.
+
+
+## **Hard constraints:**
+
+*   Use **n8n** for orchestration and UI touchpoints (forms, webhooks, chat, agents, schedulers).
+*   Use **FLUX** (Pro/Kontext/Tools/Schnell) for all image tasks (gen + edit + control). Prefer **Kontext** for consistent edits; use **Fill/Depth/Canny** for layout control; default to **Pro Raw/Ultra** for realism or resolution; include a **Schnell** fallback when API limits bite.
+*   Keep UX dead simple (one-screen form or chat). No coding required for end user.
+
+
+## **Deliverables (structure your answer exactly like this):**
+
+
+### **A) Master Idea Map (by industry; Easiest → Hardest)**
+
+For each of **Advertising**, **Retail**, **Manufacturing** provide **10–15 ideas**. For each **idea**, include:
+
+1.  **One-liner** (≤18 words).
+2.  **Who it helps** (persona + company size).
+3.  **EU painpoint fit**: workforce / cost / innovation (pick ≥1; explain in one sentence).
+4.  **Originality angle** (why new; what others miss).
+5.  **User journey (simple)**: input → click → output (3–6 steps, plain text).
+6.  **n8n building blocks**: triggers, key nodes (AI Agent, HTTP Request, Webhook, Google Sheets, Notion, S3, Vector DB, etc.), data stores.
+7.  **FLUX usage**: model & mode (Pro Raw/Ultra, Kontext Pro/Max, Tools: Fill/Depth/Canny, or Schnell fallback) + why.
+8.  **LLM role(s)**: copywriting, brief compression, prompt-programming, QC, safety filters. Specify model-agnostic prompts.
+9.  **Key prompts** (ready to paste):
+    *   **Brief-to-Prompt** (LLM → FLUX prompt)
+    *   **Style/Brand Guard** (LLM checks)
+    *   **FLUX text prompt(s)** (2–3 variants)
+10. **Data in** (where it comes from; sample fields).
+11. **Assets out** (image specs, naming, destination apps via nodes).
+12. **9-Hour Build Plan** (bullet sprints):
+    *   **T-90 min MVP**
+    *   **T-4h Mid**
+    *   **T-9h Final** (stretch: agent autonomy / batch modes)
+
+13. **Demo moment** (30–45s wow reveal).
+14. **KPIs** (time saved, cost saved vs agency, output volume/quality).
+15. **Risks & mitigations** (brand safety, hallucinations, GDPR red flags; include **Schnell offline fallback** and “rate-limit graceful degrade”).
+16. **Future v1.1** (after hackathon: shipping path).
+
+
+### **B) “Best-Bet Shortlist” (top 6 across all industries)**
+
+*   **Scoring matrix table** (criteria: Wow, EU impact, Feasibility in 9h, SME relevance, Ease for non-experts, On-brand with hosts). Score 1–5.
+*   **Pick 1–2 winners** with a 60-second demo script (Hemingway style).
+
+
+### **C) Build Recipes (copy-paste ready)**
+
+Provide **two** complete, concrete recipes for the chosen winner(s):
+
+**Recipe format (repeat for each winner):**
+
+*   **Flow overview**: 6–10 nodes in order (Trigger → Form/Webhook → LLM Brief-Compressor → Brand Guard → FLUX call → QC → Storage → Delivery).
+*   **n8n nodes (by name)** + minimal config notes (what to paste where).
+*   **LLM prompts** (3 blocks as above).
+*   **FLUX call** (endpoint/mode; parameters: prompt, negative prompt, aspect, steps, seed handling).
+*   **QC loop** (automatic retry rules; LLM “does this match brief?” check).
+*   **Outputs** (file naming, foldering, delivery to Notion/Drive/Shop/CMS).
+*   **Schnell fallback** (switch logic if Pro/Kontext quota fails).
+*   **Live demo script** (30–45s).
+
+
+### **D) Usability Layer (for non-experts)**
+
+*   **One-screen UI spec**: fields, defaults, helper text, example presets.
+*   **“No decision” mode**: minimal required input; sensible defaults.
+*   **Error messages**: short, friendly, fix-it instructions.
+
+
+### **E) Compliance & Ops Notes (one page max)**
+
+*   **EU data basics**: prefer EU data residency (works with n8n Cloud), no personal data needed for demo.
+*   **Image rights**: for demo only; for production, swap to owned/product images and confirm brand approvals.
+*   **Rate limit plan**: batch + queue; degrade to Schnell with smaller AR when needed.
+
+
+### **F) Artefacts & Self-Audit (make these explicit)**
+
+*   **Data artefacts**: sample inputs, prompts, negative prompts, seeds.
+*   **Output artefacts**: 3 sample images per idea (thumbnails ok), any repetition/regurgitation notes.
+*   **Sampling artefacts**: note randomness/seed impacts and any patterning you observe.
+*   **Leak checks**: list any spurious clues or training-data remnants you notice.
+*   **Auto-critique**: 5 bullets on weaknesses and 5 fixes.
+*   **How this leverages host strengths**:
+    *   Calls out **Kontext** for controlled edits, **Tools** for composition, **Pro Raw/Ultra** for photoreal/hi-res.
+    *   Uses **n8n AI Agent** + 400+ nodes + EU Cloud story.
+
+
+## **Formatting rules:**
+
+*   Use Markdown with collapsible sections per industry and per idea.
+*   Use tables for the scoring matrix and for node lists.
+*   Keep sentences short. Active voice. No fluff.
+*   Label every idea with **[EU-Impact]** if it hits workforce/cost/innovation.
+
+
+## **Guardrails & Assumptions:**
+
+*   Treat all inputs as demo-safe placeholders. No sensitive personal data.
+*   If FLUX Pro is unavailable, auto-switch to **Schnell** with reduced quality; declare it.
+*   Keep stack model-agnostic for LLMs; focus credit on **n8n + FLUX**.
+*   End with a **10-slide pitch outline**: Problem, Insight, Solution, Tech, Demo, EU Impact, ROI, Risk, Roadmap, Ask.
+
+
